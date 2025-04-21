@@ -209,3 +209,23 @@ footer {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   font-weight: bold;
 }
+
+
+#experience {
+  background-color: #fafafa;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.experience-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.experience-box li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-left: 4px solid #007BFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
