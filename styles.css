@@ -12,8 +12,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  color: #333;
   padding: 20px;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Container to center the content */
@@ -24,6 +24,7 @@ body {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  overflow: hidden; /* Ensure content stays within bounds */
 }
 
 /* Header */
@@ -71,6 +72,7 @@ section h1 {
   background-color: #fafafa;
   border-radius: 8px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 30px;
@@ -129,6 +131,10 @@ footer {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
+  body {
+    padding: 10px; /* Less padding on small screens */
+  }
+
   nav ul {
     flex-direction: column;
     padding: 10px 0;
@@ -138,5 +144,45 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+
+  #about img {
+    width: 120px;
+    height: 120px;
+  }
+
+  section {
+    padding: 30px 10px;
+  }
+
+  section h1 {
+    font-size: 28px;
+  }
+
+  .project-list {
+    grid-template-columns: 1fr; /* Stack projects on small screens */
+  }
+}
+
+/* For very small screens (mobile phones) */
+@media (max-width: 480px) {
+  #about {
+    padding: 15px;
+  }
+
+  .container {
+    padding: 10px; /* Reduce padding on tiny screens */
+  }
+
+  .project {
+    padding: 15px;
+  }
+
+  section h1 {
+    font-size: 24px; /* Adjust heading size */
+  }
+
+  .project-list {
+    grid-template-columns: 1fr; /* Stack projects for extra small screens */
   }
 }
