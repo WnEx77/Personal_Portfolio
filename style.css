@@ -1,15 +1,37 @@
 /* General Styles */
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+  padding: 20px;
+}
+
+/* Container to center the content */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Header */
 header {
   background-color: #333;
   color: white;
-  padding: 1rem;
+  padding: 15px 0;
+  border-radius: 8px 8px 0 0;
 }
 
 nav ul {
@@ -25,46 +47,96 @@ nav ul li {
 nav ul li a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
+nav ul li a:hover {
+  color: #f39c12;
+}
+
+/* Section Styles */
 section {
-  padding: 2rem;
+  padding: 40px 20px;
+  margin: 20px 0;
+}
+
+section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
 }
 
 #about {
-  background-color: #f4f4f4;
+  background-color: #fafafa;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
-#projects {
-  background-color: #e0e0e0;
+#about img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+#projects, #contact {
+  background-color: #ffffff;
+  border-radius: 8px;
 }
 
 .project-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .project {
-  flex: 1;
-  padding: 10px;
-  margin: 10px;
-  background-color: #fff;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.project h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.project a {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.project a:hover {
+  color: #2980b9;
+}
+
+/* Footer Styles */
 footer {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 10px 0;
+  border-radius: 0 0 8px 8px;
 }
 
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
+    padding: 10px 0;
   }
 
-  .project-list {
+  #about {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
