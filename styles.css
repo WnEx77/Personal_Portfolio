@@ -192,3 +192,20 @@ footer {
     grid-template-columns: 1fr; /* Stack projects for extra small screens */
   }
 }
+
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.skill-box {
+  background-color: #eef1f5;
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
