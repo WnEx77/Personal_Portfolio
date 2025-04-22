@@ -198,3 +198,20 @@ footer {
     grid-template-columns: 1fr; /* Stack projects for extra small screens */
   }
 }
+
+#skill {
+  background-color: #fafafa;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+#skill img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
