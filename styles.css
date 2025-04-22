@@ -133,17 +133,18 @@ section h1 {
   border-radius: 8px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start; /* Align items at the top */
+  justify-content: space-between; /* Space them evenly */
   gap: 30px;
   padding: 20px;
 }
 
 #skills .skill {
   display: flex;
-  align-items: center; /* Stack the image and title vertically */
-  justify-content: space-between;
-  width: 100%;
+  align-items: center; /* Keep the image and text aligned */
+  justify-content: flex-start; /* Align items at the start for desktop */
+  width: 100%; /* Make each skill box take full width on smaller screens */
+  max-width: 300px; /* Set a max width for each box on larger screens */
 }
 
 #skills .skill img {
@@ -161,15 +162,15 @@ section h1 {
 
 #skills h1 {
   text-align: left;
-  font-size: 2rem; /* Adjust size as necessary */
-  flex-grow: 1; /* Allow the title to take available space */
+  font-size: 2rem;
+  flex-grow: 1;
 }
 
 #skills ul {
   list-style-type: none;
   padding-left: 0;
   text-align: left;
-  flex-basis: 200px; /* Set a width for the list to maintain consistency */
+  flex-basis: 200px;
 }
 
 #skills li {
