@@ -31,12 +31,7 @@ body {
 
 /* Header */
 header {
-/*   background-color: #333;
-  color: white;
-  padding: 15px 0;
-  border-radius: 8px 8px 0 0;
-  text-align: center; */
-   background-color: #333;
+  background-color: #333;
   color: white;
   text-align: center;
   padding: 10px 0;
@@ -98,6 +93,7 @@ section h1 {
   background-color: #fafafa;
   border-radius: 8px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 30px;
@@ -142,8 +138,6 @@ section h1 {
   margin-bottom: 10px;
 }
 
-
-
 #projects, #contact {
   background-color: #ffffff;
   border-radius: 8px;
@@ -178,22 +172,6 @@ section h1 {
 .project a:hover {
   color: #2980b9;
 }
-
-/* .skill {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-
-  background-color: #fafafa;
-  border-radius: 8px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-
-} */
 
 /* Footer Styles */
 footer {
@@ -241,6 +219,31 @@ footer {
   .project-list {
     grid-template-columns: 1fr; /* Stack projects on small screens */
   }
+
+  #skills {
+    flex-direction: column; /* Stack items vertically on small screens */
+    gap: 20px;
+  }
+
+  #skills .skill {
+    display: flex;
+    flex-direction: column; /* Stack image and title vertically */
+    align-items: center; /* Center align the items */
+    text-align: center; /* Align text to center */
+  }
+
+  #skills .skill img {
+    margin-right: 0; /* Remove margin */
+    margin-bottom: 10px; /* Add space between image and title */
+  }
+
+  #skills .skill .text {
+    align-items: center; /* Center align the text on mobile */
+  }
+
+  #skills ul {
+    text-align: center; /* Center align the list on mobile */
+  }
 }
 
 /* For very small screens (phones) */
@@ -264,5 +267,12 @@ footer {
   .project-list {
     grid-template-columns: 1fr; /* Stack projects for extra small screens */
   }
-}
 
+  #skills .skill {
+    flex-direction: column; /* Ensure vertical stacking on very small screens */
+  }
+
+  #skills ul {
+    text-align: center; /* Center the list items */
+  }
+}
