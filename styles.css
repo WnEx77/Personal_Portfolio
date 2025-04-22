@@ -89,6 +89,7 @@ section h1 {
 }
 
 /* Experience Section Styles */
+/* Experience Section Styles */
 #experience {
   background-color: #fafafa;
   border-radius: 8px;
@@ -104,9 +105,9 @@ section h1 {
 }
 
 .experience-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
+  display: flex;
+  flex-direction: column; /* Stack the experience items vertically */
+  gap: 20px; /* Add space between each experience item */
 }
 
 .experience {
