@@ -130,12 +130,10 @@ section h1 {
 }
 
 .skill {
-.image-container {
   display: flex;
   justify-content: center;
   align-items: left;
   height: 100px; /* Adjust as needed */
-}
 
 }
 
