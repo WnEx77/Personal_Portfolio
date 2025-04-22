@@ -98,30 +98,34 @@ section h1 {
   background-color: #fafafa;
   border-radius: 8px;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 30px;
+  padding: 20px;
 }
-/* Adjust the layout of the skills section */
+
 #skills .skill {
   display: flex;
-  justify-content: space-between; /* Distribute space evenly between image, title, and list */
-  align-items: left; /* Vertically center items */
-  gap: 20px; /* Space between items */
-  margin-bottom: 20px;
-  padding-right: 200px;
+  align-items: center; /* Stack the image and title vertically */
+  justify-content: space-between;
+  width: 100%;
 }
 
 #skills .skill img {
   width: 100px; /* Adjust image size as needed */
   height: 100px;
-/*   object-fit: cover; */
   border-radius: 8px;
+  margin-right: 20px;
+}
+
+#skills .skill .text {
+  display: flex;
+  flex-direction: column; /* Stack title and text vertically */
+  align-items: flex-start;
 }
 
 #skills h1 {
-  text-align: center;
+  text-align: left;
   font-size: 2rem; /* Adjust size as necessary */
   flex-grow: 1; /* Allow the title to take available space */
 }
@@ -129,7 +133,7 @@ section h1 {
 #skills ul {
   list-style-type: none;
   padding-left: 0;
-  text-align: left; /* Align the list to the right */
+  text-align: left;
   flex-basis: 200px; /* Set a width for the list to maintain consistency */
 }
 
@@ -137,6 +141,7 @@ section h1 {
   font-size: 1.1rem;
   margin-bottom: 10px;
 }
+
 
 
 #projects, #contact {
