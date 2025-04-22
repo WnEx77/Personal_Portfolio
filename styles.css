@@ -314,7 +314,11 @@ footer {
   }
 
   #skills .skill {
-    flex-direction: column; /* Ensure vertical stacking on very small screens */
+/*     flex-direction: column;  Ensure vertical stacking on very small screens */ 
+    display: flex;
+    flex-direction: column; /* Stack image and title vertically */
+    align-items: center; /* Center align the items */
+    text-align: center; /* Align text to center */
   }
 
   #skills ul {
