@@ -129,13 +129,13 @@ section h1 {
   color: #2980b9;
 }
 
-.skill {
+/* .skill {
   border-radius: 50%;
   width: 150px;
   height: 150px;
   object-fit: cover;
 
-/*   background-color: #fafafa; */
+  background-color: #fafafa;
   border-radius: 8px;
   display: flex;
   flex-wrap: wrap;
@@ -143,7 +143,7 @@ section h1 {
   justify-content: center;
   gap: 30px;
 
-}
+} */
 
 /* Footer Styles */
 footer {
