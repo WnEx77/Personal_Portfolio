@@ -115,7 +115,7 @@ section h1 {
 #skills .skill img {
   width: 100px; /* Adjust image size as needed */
   height: 100px;
-  object-fit: cover;
+/*   object-fit: cover; */
   border-radius: 8px;
 }
 
@@ -128,7 +128,7 @@ section h1 {
 #skills ul {
   list-style-type: none;
   padding-left: 0;
-  text-align: right; /* Align the list to the right */
+  text-align: left; /* Align the list to the right */
   flex-basis: 200px; /* Set a width for the list to maintain consistency */
 }
 
