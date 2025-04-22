@@ -164,7 +164,7 @@ section h1 {
 }
 
 #skills h1 {
-  text-align: left;
+  text-align: center;
   font-size: 2rem;
   flex-grow: 1;
   width: 100%;
