@@ -130,10 +130,18 @@ section h1 {
 }
 
 .skill {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+
+/*   background-color: #fafafa; */
+  border-radius: 8px;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  align-items: left;
-  height: 100px; /* Adjust as needed */
+  gap: 30px;
 
 }
 
