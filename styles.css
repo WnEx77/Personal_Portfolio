@@ -89,7 +89,6 @@ section h1 {
 }
 
 /* Experience Section Styles */
-/* Experience Section Styles */
 #experience {
   background-color: #fafafa;
   border-radius: 8px;
@@ -127,7 +126,6 @@ section h1 {
   font-size: 1.1rem;
   margin-bottom: 10px;
 }
-
 
 #skills {
   background-color: #fafafa;
@@ -267,31 +265,21 @@ footer {
 
   #skills {
     flex-direction: column; /* Stack items vertically on small screens */
-    gap: 20px;
+    gap: 20px; /* Add space between each skill item */
+    align-items: center; /* Ensure the items are centered */
   }
 
   #skills .skill {
-    display: flex;
-    flex-direction: column; /* Stack image and title vertically */
-    align-items: center; /* Center align the items */
-    text-align: center; /* Align text to center */
+    width: auto; /* Allow the skill box to be flexible */
+    max-width: 250px; /* Limit the width for consistency */
+    text-align: center; /* Center the text inside each skill */
   }
 
-  #skills .skill img {
-    margin-right: 0; /* Remove margin */
-    margin-bottom: 10px; /* Add space between image and title */
-  }
-
-  #skills .skill .text {
-    align-items: center; /* Center align the text on mobile */
-  }
-
-  #skills ul {
-    text-align: center; /* Center align the list on mobile */
+  #skills img {
+    margin-bottom: 10px; /* Ensure space between image and text */
   }
 }
 
-/* For very small screens (phones) */
 @media (max-width: 480px) {
   .container {
     padding: 5px; /* Reduce padding on tiny screens */
@@ -314,7 +302,6 @@ footer {
   }
 
   #skills .skill {
-/*     flex-direction: column;  Ensure vertical stacking on very small screens */ 
     display: flex;
     flex-direction: column; /* Stack image and title vertically */
     align-items: center; /* Center align the items */
