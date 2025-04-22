@@ -93,38 +93,40 @@ section h1 {
   object-fit: cover;
 }
 
-/* Style for the skills section */
+/* Adjust the layout of the skills section */
 #about .skill {
   display: flex;
-  flex-direction: column;
-  align-items: center; /* Centers the content */
-  justify-content: center;
+  justify-content: space-between; /* Distribute space evenly between image, title, and list */
+  align-items: center; /* Vertically center items */
+  gap: 20px; /* Space between items */
   margin-bottom: 40px;
 }
 
 #about .skill img {
-  max-width: 100%; /* Ensures the image resizes correctly */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 8px; /* Optional: Adds rounded corners */
-  margin-bottom: 50px;
-  align-items: left; /* Adds space below the image */
+  width: 120px; /* Adjust image size as needed */
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 #about h1 {
   text-align: center;
   font-size: 2rem; /* Adjust size as necessary */
+  flex-grow: 1; /* Allow the title to take available space */
 }
 
 #about ul {
   list-style-type: none;
   padding-left: 0;
-  text-align: center;
+  text-align: right; /* Align the list to the right */
+  flex-basis: 200px; /* Set a width for the list to maintain consistency */
 }
 
 #about li {
   font-size: 1.1rem;
   margin-bottom: 10px;
 }
+
 
 #projects, #contact {
   background-color: #ffffff;
