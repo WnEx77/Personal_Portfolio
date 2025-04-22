@@ -273,7 +273,7 @@ footer {
   #skills .skill {
     display: flex;
     flex-direction: column; /* Stack image and title vertically */
-    align-items: center; /* Center align the items */
+    align-items: left; /* Center align the items */
     text-align: center; /* Align text to center */
   }
 
