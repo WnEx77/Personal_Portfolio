@@ -110,6 +110,7 @@ section h1 {
   align-items: left; /* Vertically center items */
   gap: 20px; /* Space between items */
   margin-bottom: 20px;
+  padding-left: 90px;
 }
 
 #skills .skill img {
