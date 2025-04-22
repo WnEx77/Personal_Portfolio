@@ -88,6 +88,45 @@ section h1 {
   object-fit: cover;
 }
 
+/* Experience Section Styles */
+#experience {
+  background-color: #fafafa;
+  border-radius: 8px;
+  padding: 40px 20px;
+  margin: 20px 0;
+}
+
+#experience h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.experience-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.experience {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experience h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.experience p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
 
 #skills {
   background-color: #fafafa;
