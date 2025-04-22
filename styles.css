@@ -106,7 +106,7 @@ section h1 {
   max-width: 100%; /* Ensures the image resizes correctly */
   height: auto; /* Maintain aspect ratio */
   border-radius: 8px; /* Optional: Adds rounded corners */
-  margin-bottom: 20px; /* Adds space below the image */
+  margin-bottom: 50px; /* Adds space below the image */
 }
 
 #about h1 {
