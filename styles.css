@@ -121,7 +121,7 @@ section h1 {
 
 #skills h1 {
   text-align: center;
-  font-size: 5rem; /* Adjust size as necessary */
+  font-size: 2rem; /* Adjust size as necessary */
   flex-grow: 1; /* Allow the title to take available space */
 }
 
