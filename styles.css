@@ -144,7 +144,7 @@ section h1 {
   align-items: center; /* Center the content horizontally */
   justify-content: center;
   width: 100%; /* Default full width */
-  max-width: 250px; /* Limit the width of each skill box */
+  max-width: 500px; /* Limit the width of each skill box,was 250 */
   text-align: center; /* Center the text */
 /*   margin-bottom: 30px; */
   margin-top: 30px;
