@@ -274,7 +274,7 @@ footer {
 
   #skills .skill {
     width: auto; /* Allow the skill box to be flexible */
-    max-width: 250px; /* Limit the width for consistency */
+    max-width: 500px; /* Limit the width for consistency */
     text-align: center; /* Center the text inside each skill */
   }
 
@@ -309,6 +309,7 @@ footer {
     flex-direction: column; /* Stack image and title vertically */
     align-items: center; /* Center align the items */
     text-align: center; /* Align text to center */
+    max-width: 350px;
   }
 
   #skills ul {
