@@ -172,6 +172,7 @@ section h1 {
 
 #skills ul {
   list-style-type: none;
+  pdding-top: 20px; /* Tesing by me*/
   padding-left: 0;
   text-align: center;
   width: 100%;
