@@ -135,7 +135,7 @@ section h1 {
   align-items: flex-start; /* Align items to the top */
   justify-content: space-around; /* Space out the skill items evenly */
   gap: 30px;
-  padding: 20px;
+  padding: 5px;
 }
 
 #skills .skill {
