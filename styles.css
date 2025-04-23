@@ -146,6 +146,7 @@ section h1 {
   width: 100%; /* Default full width */
   max-width: 250px; /* Limit the width of each skill box */
   text-align: center; /* Center the text */
+  margin-bottom: 30px;
 }
 
 #skills .skill img {
